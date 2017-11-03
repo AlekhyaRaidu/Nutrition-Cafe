@@ -1,0 +1,107 @@
+<!doctype html>
+<head>
+<style>
+
+.button1 {background-color: #4CAF50;border-radius: 50%; height:50px; width:100px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-size:20px;} /* Green */
+.button2 {background-color: #008CBA; border-radius: 50%;   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); height:50px; width:100px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-size:20px;} /* Blue */
+.button3 {background-color: #f44336; border-radius: 50%;   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); height:50px; width:100px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-size:20px;} /* Red */ 
+ .button4 {background-color: #e7e7e7; color: black; border-radius: 50%;   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); height:50px; width:100px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-size:20px;} /* Gray */ 
+.button5 {background-color: #4CAF50; border-radius: 50%;   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); height:90px; width:100px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-size:20px;} /* Black */
+.cal {
+}
+</style> </head>
+<body background="images/wooden_wall_2560x1600.jpg">
+
+
+<center>
+<table width="629" height="285" border="1">
+<tbody>
+<tr>
+<td colspan="5">MENU</td>
+</tr>
+<tr>
+
+
+<th scope="col"><button onClick="bf()" class="button1">Breakfast</button></th>
+<th scope="col"><button onClick="lunch()" class="button2">Lunch</button></th>
+<th scope="col"><button onClick="dinner()" class="button3">Dinner</button></th>
+<th scope="col"><button  onClick="snacks()" class="button4">Snacks</button></th>
+<th scope="col"><button class="button5">Calorie Count</button></th>
+</tr>
+<tr>
+<td colspan="4" rowspan="2" scope="row" id="display"> </td>
+<td id="cal">hi jj,b</td>
+</tr>
+<tr>
+<td >total</td>
+</tr>
+<tr>
+<td colspan="4" scope="row"></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="4" scope="row"></td>
+<td>This order</td>
+</tr>
+<tr>
+<td colspan="4" scope="row"></td>
+<td></td>
+</tr>
+</tbody>
+
+</table>
+
+<script>
+
+function bf() {
+	var html= "<center>"+
+	"<form >"+
+"<input type='checkbox' name='vehicle' value='Bike'> <img src='images/veggie-delite.jpg'><br>veggie-delite<br>"+
+"<input type='checkbox' name='vehicle' value='Car'><img src='images/carved turkey.jpg'><br>carved-turkey <br><br>"+
+"<input type='checkbox' name='vehicle' value='Car'> <img src='images/avocado-deviled.eggs.jpg' height='160px' width='230px'><br>Avocado-delived eggs<br>"+
+"<button > Add to cart </button>"
+"</form>"+"</center>" ;
+    document.getElementById("display").innerHTML = html;
+	return cal1();
+}
+function lunch() {
+	var html= "<center>" +
+	"<form >"+
+"<input type='checkbox' name='vehicle' value='Bike'><img src='images/hummus-platter.jpg' height='170' width='170'><br><p class='1' >Hummus-platter</P> <br>"+
+"<input type='checkbox' name='vehicle' value='Car'><img src='images/crunchy-tuna-wrap.jpg' height='170' width='170'><br>Crunchy-Tuna Wrap<br>"+
+"<input type='checkbox' name='vehicle' value='Car'><img src='images/bf1.jpg' height='170' width='170'><br>Turkey Delite<br>"+
+"<button onClick='cal2()'> Add to cart </button>"
+"</form>"+"</center>" ;
+    document.getElementById("display").innerHTML = html;
+}
+
+function dinner() {
+	var html= "<center>"+
+	"<form >"+
+"<input type='checkbox' name='vehicle' value='Bike'><img src='images/tuna-salad.jpg' height='170' width='170'><br>Tuna Salad<br>"+
+"<input type='checkbox' name='vehicle' value='Car'><img src='images/donuts.jpg' height='170' width='170'><br>Krispy Kremey Donuts<br>"+
+"<button onClick='cal3()'> Add to cart </button>"
+"</form>" + "</center>";
+    document.getElementById("display").innerHTML = html;
+}
+
+function snacks() {
+	var html= "<center>"+
+	"<form >"+
+"<input type='checkbox' name='vehicle' value='Bike'><img src='images/avacado-chips.jpeg' height='170' width='170'><br>Avocado-Chips<br>"+
+"<input type='checkbox' name='vehicle' value='Car'><img src='images/choco-muffins.jpg' height='170' width='170'><br>Choco-Muffins<br>"+
+
+"<button > Add to cart </button>"
+"</form>" + "</center>" ;
+    document.getElementById("display").innerHTML = html;
+}
+ 
+ function cal1()
+ {
+	 document.getElementById("cal").innerHTML = "hey";
+	 
+ }
+</script>
+</center>
+
+</body>
